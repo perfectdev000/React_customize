@@ -1,26 +1,31 @@
 .page-header {
   width: 100%;
-  height: 4rem !important;
-  /* background-color: rgba(red, green, blue, 0.3) !important; */
+  /* background-color: rgba(red, green, blue, 1) !important; */
   border: 1px solid lightgray;
   position: fixed;
-  top:0;
+  padding: 0px !important;
   justify-content: space-between;
   display: flex;
   background-color: white !important;
+  opacity: 0.7;
   z-index: 10;
+  --bs-gutter-x: 0;
 }
 .left-in-header{
   font-size: 3rem;
   color: blue;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .right-in-header{
   font-size: 3rem;
   color: blue;
-  padding: 1rem;
+  /* padding: 1rem; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+}
+.btn-header{
+  background-color: transparent !important;
+  border-color: transparent !important;
 }

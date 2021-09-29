@@ -1,5 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './TheHeader.css';
 export default class TheHeader extends React.Component{  
   constructor(props){
     super(props);
@@ -15,8 +16,8 @@ export default class TheHeader extends React.Component{
             this.state.login
             ?
             <div style={{justifyContent:'start', display:'flex', padding:'0.5rem 1rem'}} className="row">                        
-              <Link to='/home' className="btn btn-light col-3"> Home </Link>
-              <Link to='#' className="btn btn-light col-3"> Dashboard </Link>            
+              <Link to='/home' className="btn btn-light col btn-header"> Home </Link>
+              <Link to='#' className="btn btn-light col btn-header"> Dashboard </Link>            
             </div>         
             :
             <div style={{justifyContent:'start', display:'flex', padding:'0.5rem 1rem'}} className="row"></div>         
@@ -27,14 +28,14 @@ export default class TheHeader extends React.Component{
             this.state.login
             ?
             <div style={{justifyContent:'end', display:'flex', padding:'0.5rem 1rem'}}>            
-              <Link to='#' className="btn btn-light"><i class="far fa-bell"></i></Link>
-              <Link to='#' className="btn btn-light"><i class="far fa-comments"></i></Link>
-              <Link to='#' className="btn btn-light"><i class="far fa-envelope-open"></i></Link>            
+              <Link to='#' className="btn btn-light btn-header"><i class="far fa-bell"></i></Link>
+              <Link to='#' className="btn btn-light btn-header"><i class="far fa-comments"></i></Link>
+              <Link to='#' className="btn btn-light btn-header"><i class="far fa-envelope-open"></i></Link>            
             </div>
             :
             <div style={{justifyContent:'end', display:'flex', padding:'0.5rem 1rem'}}>
-              <Link to='/signin' className="btn btn-light col-3"> Sign In </Link>
-              <Link to='/signup' className="btn btn-light col-3"> Sign Up </Link>
+              <Link to='/signin' className="btn btn-light  btn-header"> Sign In </Link>
+              <Link to='/signup' className="btn btn-light btn-header"> Sign Up </Link>
             </div>
           }          
         </div>

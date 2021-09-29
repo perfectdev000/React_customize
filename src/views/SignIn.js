@@ -2,7 +2,6 @@ import React from 'react'
 export default class Login extends React.Component {
   
   goHome =()=>{
-    alert("OK");
     this.props.history.push('/home')
   };
   render(){
