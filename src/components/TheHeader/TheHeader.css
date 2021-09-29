@@ -1,0 +1,26 @@
+.page-header {
+  width: 100%;
+  height: 4rem !important;
+  /* background-color: rgba(red, green, blue, 0.3) !important; */
+  border: 1px solid lightgray;
+  position: fixed;
+  top:0;
+  justify-content: space-between;
+  display: flex;
+  background-color: white !important;
+  z-index: 10;
+}
+.left-in-header{
+  font-size: 3rem;
+  color: blue;
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+}
+.right-in-header{
+  font-size: 3rem;
+  color: blue;
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+}

@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+import Home from './views/Home'
+import HookEffectFunction from './exercise/HookEffectFunction'
+import HookEffectClass from './exercise/HookEffectClass'
+import CustomModal from './exercise/ShowModal'
+import ShowRadioButton from './exercise/ShowRadioButton';
+import SignIn from './views/SignIn'
+import SignUp from './views/SignUp'
+import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route path="/app" component={App} />
+      <Route path="/home" component={Home} />
+      <Route path="/exercise/hookeffectfunction" component={HookEffectFunction}/>
+      <Route path="/exercise/hookeffectclass" component={HookEffectClass}/>
+      <Route path="/exercise/showmodal" component={CustomModal}/>
+      <Route path="/exercise/showradiobutton" component={ShowRadioButton}/>
+      <Route path="/signin" component={SignIn}/>
+      <Route path="/signup" component={SignUp}/>
+      <Redirect from="/" to="/app" />      
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
