@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import TheHeader from './components/TheHeader/TheHeader';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
 const boxshadow={
   width:'100vh',
   boxShadow: "box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"

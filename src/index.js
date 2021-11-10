@@ -11,6 +11,10 @@ import CustomModal from './exercise/ShowModal'
 import ShowRadioButton from './exercise/ShowRadioButton';
 import SignIn from './views/SignIn'
 import SignUp from './views/SignUp'
+import Cube from './viewThree/Cube'
+import Shape from './viewThree/Shape'
+import DrawLine from './viewThree/DrawLine'
+
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
@@ -24,6 +28,9 @@ ReactDOM.render(
       <Route path="/exercise/showradiobutton" component={ShowRadioButton}/>
       <Route path="/signin" component={SignIn}/>
       <Route path="/signup" component={SignUp}/>
+      <Route path="/viewthree/cube" component={Cube}/>
+      <Route path="/viewthree/shape" component={Shape}/>
+      <Route path="/viewthree/drawline" component={DrawLine}/>
       <Redirect from="/" to="/app" />      
     </Switch>
   </BrowserRouter>,

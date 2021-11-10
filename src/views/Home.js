@@ -11,21 +11,36 @@ export default class Home extends React.Component {
       <div >
         <TheHeader login={true}/>
         <div style={{justifyContent:'center', display:'flex', alignItems:'center', height:'100vh', backgroundColor:'lightgray'}}>
-          <div className="row">
-            <div className="col-12">
-              Home Page
+          <div>
+            <div className="row">
+              <div className="col-4">
+                <Link to='/exercise/hookeffectfunction' >Side Effect in Function component</Link>
+              </div>
+              <div className="col-4">
+                <Link to='/exercise/hookeffectclass' >Side Effect in class component</Link>
+              </div>
+              <div className="col-4">
+                <Link to='/exercise/showmodal' >customized modal</Link>
+              </div>
             </div>
-            <div className="col-4">
-              <Link to='/exercise/hookeffectfunction' >Side Effect in Function component</Link>
-            </div>
-            <div className="col-4">
-              <Link to='/exercise/hookeffectclass' >Side Effect in class component</Link>
-            </div>
-            <div className="col-4">
-              <Link to='/exercise/showmodal' >test my custom modal class component</Link>
-            </div>
-            <div className="col-4">
-              <Link to='/exercise/showradiobutton' >test my custom RadioButton component</Link>
+            <div className="row">            
+              <div className="col-4">
+                <Link to='/exercise/showradiobutton' >customized RadioButton</Link>
+              </div>
+            </div>          
+            <div className="row">            
+              <div className="col-4">
+                <Link to='/viewthree/cube' >Three.js test : Cube</Link>
+              </div> 
+              <div className="col-4">
+                <Link to='/viewthree/shape' >Three.js test : Shape</Link>
+              </div>
+              <div className="col-4">
+                <Link to='/viewthree/drawline' >Three.js test : Line</Link>
+              </div>
+              <div className="col-4">
+                {/* <Link to='/viewthree/texture' >Three.js test : Texture</Link> */}
+              </div>
             </div>
           </div>
         </div>
